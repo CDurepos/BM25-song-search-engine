@@ -36,3 +36,15 @@ Included Files
     
     README.md                (THIS FILE)
     song_lyrics.tsv          (Data)
+
+Citations
+    
+    The following methods were written by Clayton Durepos
+        MySearchEngine.calculateIDF()
+        MySearchEngine.calculateAvgLength()
+        MySearchEngine.search()
+
+    The following methods were written by Jack Bergin
+        MySearchEngine.calculateTF()
+        MySearchEngine.calculateRelevance()
+        program6.main()
