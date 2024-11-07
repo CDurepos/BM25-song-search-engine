@@ -9,6 +9,8 @@ import java.util.*;
  * @version 04.11.2024
  */
 public class MySearchEngine {
+    private double totalLength = 0;
+
     TreeMap<Song, TreeMap<String, Double>> tf = new TreeMap<>();
     TreeMap<String, Double> idf = new TreeMap<>();
     TreeMap<Song, Double> avgLength =  new TreeMap<>();
@@ -34,6 +36,9 @@ public class MySearchEngine {
             TreeMap<String, Double> terms = new TreeMap<>();
             String[] words = song.getLyrics().trim().toLowerCase().split("\\s+");
             double songLength = words.length;
+
+            avgLength.put(song, songLength);
+            totalLength += songLength;
 
             for (String word : words) {
                 terms.put(word, terms.getOrDefault(word, 0.0) + 1);
@@ -68,15 +73,8 @@ public class MySearchEngine {
      *      an ArrayList of 'Song' objects
      */
     private void calculateAvgLength(ArrayList<Song> songs) {
-        double totalLength = 0;
-        for (Song song : songs) {
-            totalLength += song.getLyrics().split("\\s+").length;
-        }
-
         double allAvgLength = totalLength / songs.size();
-        for (Song song : songs) {
-            avgLength.put(song, song.getLyrics().split("\\s+").length/allAvgLength);
-        }
+        avgLength.replaceAll((_, v) -> v / allAvgLength);
     }
 
     /**
