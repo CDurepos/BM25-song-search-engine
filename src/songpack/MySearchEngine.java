@@ -26,6 +26,7 @@ public class MySearchEngine {
 
     /**
      * Calculate Term Frequencies
+     * @author Jack Bergin
      * @param songs
      *      an ArrayList of 'Song' objects
      */
@@ -47,6 +48,7 @@ public class MySearchEngine {
 
     /**
      * Calculate Inverse Document Frequencies
+     * @author Clayton Durepos
      * @param songs
      *      an ArrayList of 'Song' objects
      */
@@ -64,6 +66,7 @@ public class MySearchEngine {
 
     /**
      * Calculate length ratios
+     * @author Clayton Durepos
      * @param songs
      *      an ArrayList of 'Song' objects
      */
@@ -81,6 +84,7 @@ public class MySearchEngine {
 
     /**
      * Calculate relevance scores
+     * @author Jack Bergin
      * @param song
      *      An instance of Song
      * @param query
@@ -106,6 +110,7 @@ public class MySearchEngine {
 
     /**
      * Search and print most relevant songs
+     * @author Clayton Durepos
      * @param query
      *      a query to compare songs to
      */
