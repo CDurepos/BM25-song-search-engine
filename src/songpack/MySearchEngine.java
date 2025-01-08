@@ -6,7 +6,7 @@ import java.util.*;
  * A BM25 Search Engine
  * Written for Assignment 6 of COS285 Data Structures w/ Dr. Behrooz Mansouri @ The University of Southern Maine
  * @author Clayton Durepos, Jack Bergin
- * @version 04.11.2024
+ * @version 01.08.2025
  */
 public class MySearchEngine {
     TreeMap<Song, TreeMap<String, Double>> tf = new TreeMap<>();
