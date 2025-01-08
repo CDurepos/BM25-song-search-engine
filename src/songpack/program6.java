@@ -3,6 +3,10 @@ package songpack;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * Main program for Assignment 6 of USM's COS285 Data Structures course with Professor Behrooz Mansouri
+ * @author Jack Bergin
+ */
 public class program6 {
     public static void main(String[] args) throws IOException {
         ArrayList<Song> songs = MyDataReader.readFileToArrayList(args[0]);
