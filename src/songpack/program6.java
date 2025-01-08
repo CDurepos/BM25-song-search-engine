@@ -6,6 +6,7 @@ import java.util.ArrayList;
 /**
  * Main program for Assignment 6 of USM's COS285 Data Structures course with Professor Behrooz Mansouri
  * @author Jack Bergin
+ * @version 01.08.2025
  */
 public class program6 {
     public static void main(String[] args) throws IOException {
